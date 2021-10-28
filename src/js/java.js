@@ -28,7 +28,6 @@ diesel.addEventListener("click", () => {
     areaP1.disabled = false;
     areaV7.disabled = false;
 });
-
 function showTax(taxNumber){tax.innerText = taxNumber + " Euro";}
 function calcTax(){
 let hubraum = areaP1.value;
