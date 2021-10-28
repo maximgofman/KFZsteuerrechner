@@ -1,0 +1,57 @@
+body{
+    display:flex;
+    justify-content: center;
+}
+
+.tax-calculator{
+    margin-top:10em;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color:rgba(0,0,0,0.04);
+    padding: 1em;
+    color:rgba(0,0,0,0.2);
+    background-color:rgba(0,0,0,0.02);
+    border-radius: 0.5em;
+    animation: ease-in-out;
+    animation-name: coming;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes coming {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+.input-field{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.input-field-second{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-field-second .num{
+    width:20em;
+}
+
+.input-field-second label{
+    width:25em;
+}
+
+.input-field-second-calc{
+    display:flex;
+    justify-content:left;
+
+}
+
+#tax{
+    margin-left:5em;
+    font-weight: bold;
+
+}
+
