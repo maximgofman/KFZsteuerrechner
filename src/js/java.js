@@ -12,21 +12,24 @@ let elektro = document.getElementById("elektro");
 let tax = document.getElementById("tax");
 
 areaF2.disabled = true;
+areaF2.disabled = true; areaF2.value = "0";
 /** disable/delete the other inputfield **/
+
 elektro.addEventListener("click",() => {
-    areaP1.disabled = true; areaP1.value = "";
-    areaV7.disabled = true; areaV7.value = "";
-    areaF2.disabled = false;
+    areaP1.disabled = true; areaP1.value = "0";
+    areaV7.disabled = true; areaV7.value = "0";
+    areaF2.disabled = false; areaF2.value = "";
 });
 ottomotor.addEventListener("click", () => {
-    areaF2.disabled = true; areaF2.value = "";
-    areaP1.disabled = false;
-    areaV7.disabled = false;
+    areaF2.disabled = true; areaF2.value = "0";
+    areaP1.disabled = false; areaP1.value = "";
+    areaV7.disabled = false; areaV7.value = "";
+
 });
 diesel.addEventListener("click", () => {
-    areaF2.disabled = true; areaF2.value = "";
-    areaP1.disabled = false;
-    areaV7.disabled = false;
+    areaF2.disabled = true; areaF2.value = "0";
+    areaP1.disabled = false; areaP1.value = "";
+    areaV7.disabled = false; areaV7.value = "";
 });
 function showTax(taxNumber){tax.innerText = taxNumber + " Euro";}
 function calcTax(){
