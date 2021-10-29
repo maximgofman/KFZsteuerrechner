@@ -3,6 +3,7 @@ body{
     justify-content: center;
 }
 
+
 #bg-half-box{
     position: absolute;
     margin-top:35%;
@@ -12,6 +13,9 @@ body{
     width:100%;
     opacity: 0.7;
 
+}
+.spinner-setting{
+    margin-left:6em;
 }
 
 .tax-calculator{
@@ -54,16 +58,21 @@ body{
 .input-field-second label{
     width:25em;
 }
-
 .input-field-second-calc{
     display:flex;
     justify-content:left;
-
 }
 
 #tax{
+    position: absolute;
+    transform: translateX(7em);
     margin-left:5em;
     font-weight: bold;
-
+    color:#0275d8;
+    opacity: 0;
 }
 
+.spinner-setting{
+    opacity: 0;
+    transition: all 200ms;
+}

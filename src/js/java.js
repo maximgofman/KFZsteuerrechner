@@ -10,6 +10,7 @@ let diesel = document.getElementById("diesel");
 let ottomotor = document.getElementById("ottomotor");
 let elektro = document.getElementById("elektro");
 let tax = document.getElementById("tax");
+let spinnerSetting = document.querySelector('.spinner-setting');
 
 areaF2.disabled = true;
 areaF2.disabled = true; areaF2.value = "0";
@@ -36,6 +37,9 @@ function calcTax(){
 let hubraum = areaP1.value;
 let emission = areaV7.value;
 let gewicht = areaF2.value;
+    tax.style= "opacity:0";
+    spinnerSetting.style ="opacity:1";
+
     if(diesel.checked == true){
         if(emission <= 95){ emission = 95;}
         let steuer = ((Math.ceil((hubraum/100)))*9.5)+((emission-95)*2);
@@ -61,6 +65,10 @@ let gewicht = areaF2.value;
             showTax(parseInt(steuer));
         }
     }
+    setTimeout(function (){
+        spinnerSetting.style ="opacity:0";
+        tax.style= "opacity:1";
+    },400);
 }
 
 
